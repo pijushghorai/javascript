@@ -65,3 +65,17 @@ else if (balance < 900) {
 else {
     console.log("less then 1200");
 }
+
+// Shopping example
+const isUserLoggedin = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (isUserLoggedin && debitCard & 2 == 2){
+    console.log("Allow to shopping"); //multiple condition check both condition true then it print result
+}
+
+if (loggedInFromGoogle || loggedInFromEmail) {
+    console.log("User logged In"); //multiple condition check if any condition true it print result
+}
