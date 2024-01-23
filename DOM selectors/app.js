@@ -6,7 +6,7 @@ DOM selectors are methods provided by the Document object to find and select HTM
 
 getElementById:
 Finds an element by its unique ID.
-var element = document.getElementById('myElementId');
+const element = document.getElementById('myElementId');
 
 
 getElementsByClassName:
