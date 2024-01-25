@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Node using DOM</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement("div")
+    console.log(div);
+    div.className = "main-container"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "my-title")
+    div.style.backgroundColor = "highlight"
+    div.style.padding = "12px"
+    // div.innerText = "Aalu Postoo"
+    const myText = document.createTextNode("My fav Aalu Postoo")
+    div.appendChild(myText)
+
+
+    // attexh to document
+    document.body.appendChild(div)
+</script>
+</html>
