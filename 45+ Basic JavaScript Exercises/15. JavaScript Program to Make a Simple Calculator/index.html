@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Javascript code under the script tag -->
+</body>
+<script>
+    const myCalculetor = (num1, num2, opt) => {
+        if (opt == "+") {
+            return num1 + num2
+        }
+        else if (opt == "-") {
+            return num1 - num2
+        }
+        else if (opt == "*") {
+            return num1 * num2
+        }
+        else if (opt == "/") {
+            return num1 / num2
+        }
+        else{
+            return "You put wromg value, Plz try again"
+        }
+    }
+
+
+    const oparetor = prompt("Select Oparetor [+, -, *, /]")
+    const number1 = parseFloat(prompt("Enter first number"))
+    const number2 = parseFloat(prompt("Enter second number"))
+
+    const result = myCalculetor(number1, number2, oparetor)
+
+    console.log(`Result ${number1} ${oparetor} ${number2} = ${result}`);
+
+</script>
+</html>
