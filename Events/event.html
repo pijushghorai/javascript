@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="victoria"
+                    src="https://images.pexels.com/photos/8696249/pexels-photo-8696249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="victoria"></li>
+            <li><img width="200px" id="khirai"
+                    src="https://images.pexels.com/photos/8703715/pexels-photo-8703715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="khirai"></li>
+            <li><img width="200px" id="train-track"
+                    src="https://images.pexels.com/photos/8703689/pexels-photo-8703689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="train-track"></li>
+            <li><img width="200px" id="ludo"
+                    src="https://images.pexels.com/photos/8696199/pexels-photo-8696199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="ludo"></li>
+            <li><img width="200px" id="flower"
+                    src="https://images.pexels.com/photos/14209724/pexels-photo-14209724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="flower"></li>
+            <li><a style="color: aliceblue;" href="https://www.pexels.com/@pijush-ghorai-506582/gallery/" id="pexels">My
+                    Pexels Profile</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // onclick aproch provide less fetures
+    // document.getElementById('ludo').onclick = function name() {
+    //     alert("Ludo Playing")
+    // }
+
+    // document.getElementById('ludo').addEventListener('click', function () {
+    //     alert("Ludo playing again")
+    // }, false)
+
+
+    // document.getElementById('ludo').addEventListener('click', function (e) {
+    //     console.log(e);
+    // }, false)
+
+    // importent about event in javascript
+    // type, timestamp, preventDefault
+    // target, toElement, sourceElement
+    // clint Position - clintX, clintY, screenX, screenY
+    // altkey, ctrlKey, shiftKey, keyCode
+
+
+    // eventPropogation
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('ludo').addEventListener('click', function (e) {
+    //     console.log("Ludo Clicked!");
+    // }, false)
+
+
+    // eventPropogation - captureing mode
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("clicked inside the ul");
+    // }, true)
+
+    // document.getElementById('ludo').addEventListener('click', function (e) {
+    //     console.log("Ludo Clicked!");
+    // }, true)
+
+
+    // stop propogation method
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('ludo').addEventListener('click', function (e) {
+    //     console.log("Ludo Clicked!");
+    //     e.stopPropagation()
+    // }, false)
+
+
+
+    // preventDefault
+    // document.getElementById('pexels').addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("Pexels clicked");
+    // }, false)
+
+
+
+    // realworld example when clicked any image, the image is remove
+    document.querySelector('#images').addEventListener('click', function (e) {
+        // console.log(e.target);
+        if (e.target.tagName === "IMG") {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        // console.log(e.target.parentNode);
+        // console.log(e.target.tagName);
+
+    }, false)
+
+
+</script>
+
+</html>
