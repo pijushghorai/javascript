@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clint and Screen</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1>Clint and Screen</h1>
+</body>
+<script>
+
+    // clintX and clintY
+    document.addEventListener("mousemove", function (e) {
+        let x = e.clientX;
+        let y = e.clientY;
+
+        console.clear()
+        console.log(x);
+        console.log(y);
+    })
+
+
+    // screenX and screenY
+    document.addEventListener("mousemove", function (e) {
+        let x2 = e.screenX;
+        let y2 = e.screenY;
+
+        console.clear()
+        console.log(x2);
+        console.log(y2);
+    })
+
+
+</script>
+</html>
