@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key code event</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Key code event</h1>
+</body>
+
+<script>
+    // document.addEventListener('keydown', function(event) {
+    // Modern approach using key and code
+//     console.log('Key:', event.key);
+//     console.log('Code:', event.code);
+//     console.log('Code:', event.keyCode);
+// });
+
+
+
+// document.addEventListener('keydown', function(event) {
+//     // Deprecated, but sometimes used as a fallback
+//     console.log('Key code (deprecated):', event.keyCode);
+// });
+
+
+
+document.addEventListener('keydown', function(event) {
+    // Check if the Alt key was pressed
+    if (event.altKey) {
+        console.log('Alt key was pressed');
+    }
+
+    // Check if the Ctrl key was pressed
+    if (event.ctrlKey) {
+        console.log('Ctrl key was pressed');
+    }
+
+    // Check if the Shift key was pressed
+    if (event.shiftKey) {
+        console.log('Shift key was pressed');
+    }
+});
+
+
+
+
+</script>
+</html>
