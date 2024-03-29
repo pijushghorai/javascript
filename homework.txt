@@ -1,0 +1,30 @@
+Absolutely, here are 40 coding questions for you to practice:
+
+
+
+Write a program that declares an array of strings and uses the map method to create a new array with the lengths of each string. Print the new array to the console.
+Write a program that declares an array of numbers and uses the filter method to create a new array with only the even numbers. Print the new array to the console.
+Write a program that declares an array of numbers and uses the reduce method to calculate the sum of all the numbers. Print the sum to the console.
+Write a program that declares an object with two properties: name and age. Print the object to the console.
+Write a program that declares an object with a method sayHello that prints "Hello, world!" to the console when called. Call the method.
+Write a program that declares a function add that takes two arguments a and b and returns their sum. Print the result of calling the function with arguments 5 and 10 to the console.
+Write a program that declares a function isEven that takes a number as an argument and returns true if the number is even and false otherwise. Print the result of calling the function with argument 4 to the console.
+Write a program that uses the setTimeout function to print "Hello, world!" to the console after 3 seconds.
+Write a program that uses the setInterval function to print "Hello, world!" to the console every second.
+Write a program that uses the Date object to print the current date and time to the console.
+Write a program that declares a class Person with properties name and age and a method sayHello that prints "Hello, my name is [name] and I am [age] years old." to the console. Create an instance of the class and call the sayHello method.
+Write a program that declares a class Rectangle with properties width and height and a method getArea that returns the area of the rectangle. Create an instance of the class with width 5 and height 10 and print the area to the console.
+Write a program that declares a function capitalize that takes a string as an argument and returns the string with the first letter capitalized. Print the result of calling the function with argument "hello, world!" to the console.
+Write a program that declares a function reverse that takes a string as an argument and returns the string reversed. Print the result of calling the function with argument "hello, world!" to the console.
+Write a program that declares a function factorial that takes a number as an argument and returns the factorial of the number. Print the result of calling the function with argument 5 to the console.
+Write a program that declares a function isPalindrome that takes a string as an argument and returns true if the string is a palindrome and false otherwise. Print the result of calling the function with argument "racecar" to the console.
+Write a program that declares a function isPrime that takes a number as an argument and returns true if the number is prime and false otherwise. Print the result of calling the function with argument 7 to the console.
+Write a program that declares a function fibonacci that takes a number n as an argument and returns the nth number in the Fibonacci sequence. Print the result of calling the function with argument 8 to the console.
+Write a program that declares a function flatten that takes an array of arrays as an argument and returns a single flattened array. Print the result of calling the function with argument [[1, 2], [3, 4], [5, 6]] to the console.
+Write a program that declares a function chunk that takes an array and a size as arguments and returns an array of arrays where each sub-array has at most size elements. Print the result of calling the function with argument ([1, 2, 3, 4, 5], 2) to the console.
+Write a program that declares a function uniq that takes an array as an argument and returns a new array with duplicate values removed. Print the result of calling the function with argument ([1, 2, 2, 3, 4, 4, 5]) to the console.
+Write a program that declares a function intersection that takes two arrays as arguments and returns a new array with elements that are present in both arrays. Print the result of calling the function with arguments ([1, 2, 3], [2, 3, 4]) to the console.
+Write a program that declares a function difference that takes two arrays as arguments and returns a new array with elements that are present in the first array but not in the second. Print the result of calling the function with arguments ([1, 2, 3], [2, 3, 4]) to the console.
+Write a program that declares a function without that takes an array and values to exclude as arguments and returns a new array with all occurrences of the values removed. Print the result of calling the function with arguments ([1, 2, 3, 4, 5], 2, 4) to the console.
+Write a program that declares a function zip that takes two arrays as arguments and returns a new array of arrays where each sub-array contains the elements at the same index from each array. Print the result of calling the function with arguments ([1, 2, 3], [4, 5, 6]) to the console.
+Write a program that declares a function unzip that takes an array of arrays as an argument and returns a new array of arrays where each sub-array contains the elements at the same index from each sub-array
