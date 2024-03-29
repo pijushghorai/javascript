@@ -107,3 +107,12 @@ let arr = ['hey', 'hii', 'hello', 'hola', 'namaste']
 arr.forEach((val) => {
     console.log(val);
 }) 
+
+
+// Map
+let number = [1, 2, 3, 4, 5, 6];
+let store = number.map((num) => {
+    return num * num
+})
+
+console.log(store);
