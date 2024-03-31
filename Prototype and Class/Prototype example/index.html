@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Example</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>Prototype Example</h1>
+  </body>
+  <script>
+    let myHeros = ["thor", "spiderman"];
+    let dcHeros = ["batman", "Black adam", "superman"];
+
+    let heropower = {
+      thor: "hammer",
+      spiderman: "sling",
+
+      getSpiderPower: function () {
+        console.log(`Spidy power is ${this.spiderman}`);
+      },
+    };
+
+    Object.prototype.pijush = function () {
+      console.log("Pijush present in all object");
+    };
+
+    myHeros.pijush();
+
+    //---------------------------------------------------------------//
+
+    // HeyArray method total elements are 4
+    Array.prototype.heyArray = function () {
+      console.log(`Total element are ${this.length}`);
+    };
+
+    myHeros.heyArray();
+    dcHeros.heyArray();
+
+    //------------------------------------------------------------//
+
+    const User = {
+      name: "Pijush Ghorai",
+      email: "pghorai098@gmail.com",
+    };
+
+    const Teacher = {
+      makeVideos: true,
+    };
+
+    // Teacher.__proto__ = User;
+    // Teacher.prototype = User
+    Object.setPrototypeOf(Teacher, User);
+
+    //-------------------------------------------------------------------//
+
+    const TeachingSupporet = {
+      isAvilable: false,
+    };
+
+    const TSAssistant = {
+      makeAssisnment: "JS Assinment",
+      fulltime: true,
+      __proto__: TeachingSupporet,
+    };
+
+    Object.setPrototypeOf(TeachingSupporet, Teacher);
+
+    //-------------------------------------------------------------------//
+    //---------------------------CHALANGE--------------------------------//
+    //-------------------------------------------------------------------//
+
+    String.prototype.trueLength = function() {
+        console.log(`True length is ${this.trim().length}`);
+    }
+
+    console.log("Pijush".length);
+    console.log("Pijush    ".length);
+    // truelength()
+
+    "Pijush    ".trueLength()
+
+
+
+  </script>
+</html>
