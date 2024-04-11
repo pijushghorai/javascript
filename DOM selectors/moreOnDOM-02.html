@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More On DOM 02</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>Hello User, Good Morning</h1>
+    Emter your name:
+    <input type="text" name="name" id="input" />
+    <p id="js"></p>
+
+    <script>
+      document.addEventListener("input", input);
+      function input() {
+        let one = document.querySelector("#input").value;
+        document.querySelector("#js").innerHTML =
+          "You are writing: " + one.toUpperCase();
+      }
+
+    </script>
+  </body>
+</html>
